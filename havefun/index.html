@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <title>Have fun in my resume~</title>
+	<script src="http://lib.sinaapp.com/js/jquery/1.9.1/jquery-1.9.1.min.js"></script>
+</head>
+<body>
+    <!-- 为ECharts准备一个具备大小（宽高）的Dom -->
+    <div id="main" style="height:600px;width:800px"></div>
+    <!-- ECharts单文件引入 -->
+    <script src="echarts-all.js"></script>
+    <script type="text/javascript">
+        // 基于准备好的dom，初始化echarts图表
+        var myChart = echarts.init(document.getElementById('main')); 
+        
+        var option = {
+    backgroundColor: '#1b1b1b',
+    color: ['gold','aqua','lime'],
+    title : {
+        text: 'Have Fun in My Resume',
+        x:'center',
+        textStyle : {
+            color: '#fff'
+        }
+    },
+    series : [
+        {
+            name: '动态加载实例',
+            type: 'map',
+            roam: true,
+            hoverable: false,
+            mapType: 'china',
+            itemStyle:{
+                normal:{
+                    borderColor:'rgba(100,149,237,1)',
+                    borderWidth:0.5,
+                    areaStyle:{
+                        color: '#1b1b1b'
+                    }
+                }
+            },
+            data:[],
+            markLine : {
+                smooth:true,
+                effect : {
+                    show: true,
+                    scaleSize: 1,
+                    period: 30,
+                    color: '#fff',
+                    shadowBlur: 10
+                },
+                itemStyle : {
+                    normal: {
+                        borderWidth:1,
+                        lineStyle: {
+                            type: 'solid',
+                            shadowBlur: 10
+                        }
+                    }
+                },
+                geoCoord: { },
+                data : [
+                ]
+            },
+            markPoint : {
+                symbol:'emptyCircle',
+                symbolSize : function (v){
+                    return 10 + v/10
+                },
+                effect : {
+                    show: true,
+                    shadowBlur : 0
+                },
+                itemStyle:{
+                    normal:{
+                        label:{show:false}
+                    },
+                    emphasis: {
+                        label:{position:'top'}
+                    }
+                },
+               data : [
+                ]
+            },
+            geoCoord:{
+                '北京': [116.4551,40.2539],
+            },
+ 
+        }
+    ]
+};               
+
+        // 为echarts对象加载数据 
+        myChart.setOption(option); 
+    </script>
+</body>
+<script>
+$(document).ready(function(){
+$.get("http://182.92.176.105/getinfo/getiplog.php", function(data){
+	iplists = $.parseJSON(data);
+	for(var i=0;i<iplists['iplog'].length; i++){
+		city = iplists['iplog'][i].city;
+		lng = iplists['iplog'][i].lng;
+		lat = iplists['iplog'][i].lat;
+
+		//city = "广州";
+		//lng = 113.5107;
+		//lat = 23.2196;
+		var strobject = '{"'+city+'":['+lng+','+lat+']}';
+		var geoCoord= eval("("+strobject+")");
+    	myChart._option['series'][0]['geoCoord']=geoCoord;
+    	myChart.freshgeocoord();
+		var con=[{name:city}, {name:'北京', value:75}];
+		var point={name:city ,value:30};
+		myChart.addMarkLine(0,{
+			data:[con],
+		});
+		myChart.addMarkPoint(0,{
+			data:[point],
+		});
+	}
+});
+});
+</script>
+</html>
