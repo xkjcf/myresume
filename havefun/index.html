@@ -102,7 +102,7 @@ var option = {
 // 为echarts对象加载数据 
 myChart.setOption(option); 
 		
-$.get("http://182.92.176.105/getinfo/getiplog.php", function(data){
+$.get("http://182.92.176.105/getinfo/?query=true&app=myresume", function(data){
 	iplists = $.parseJSON(data);
 	for(var i=0;i<iplists['iplog'].length; i++){
 		city = iplists['iplog'][i].city;
