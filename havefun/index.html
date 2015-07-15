@@ -16,14 +16,14 @@
     <div id="main" ></div>
 </body>
 <!-- ECharts单文件引入 -->
-    <script src="echarts-all.js"></script>
-    <script type="text/javascript">
-	$("#main").css("height",$(document).height());
-	$("#main").css("width",$(document).width());
-        // 基于准备好的dom，初始化echarts图表
-        var myChart = echarts.init(document.getElementById('main')); 
+<script src="echarts-all.js"></script>
+<script type="text/javascript">
+$("#main").css("height",$(document).height());
+$("#main").css("width",$(document).width());
+// 基于准备好的dom，初始化echarts图表
+var myChart = echarts.init(document.getElementById('main')); 
         
-        var option = {
+var option = {
     backgroundColor: '#1b1b1b',
     color: ['gold','aqua','lime'],
     title : {
@@ -98,11 +98,9 @@
         }
     ]
 };               
-        // 为echarts对象加载数据 
-        myChart.setOption(option); 
-    </script>
-<script>
-$(document).ready(function(){
+// 为echarts对象加载数据 
+myChart.setOption(option); 
+		
 $.get("http://182.92.176.105/getinfo/getiplog.php", function(data){
 	iplists = $.parseJSON(data);
 	for(var i=0;i<iplists['iplog'].length; i++){
@@ -110,9 +108,6 @@ $.get("http://182.92.176.105/getinfo/getiplog.php", function(data){
 		lng = iplists['iplog'][i].lng;
 		lat = iplists['iplog'][i].lat;
 
-		//city = "广州";
-		//lng = 113.5107;
-		//lat = 23.2196;
 		var strobject = '{"'+city+'":['+lng+','+lat+']}';
 		var geoCoord= eval("("+strobject+")");
     	myChart._option['series'][0]['geoCoord']=geoCoord;
@@ -126,7 +121,6 @@ $.get("http://182.92.176.105/getinfo/getiplog.php", function(data){
 			data:[point],
 		});
 	}
-});
 });
 </script>
 </html>
