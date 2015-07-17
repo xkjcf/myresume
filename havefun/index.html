@@ -108,13 +108,14 @@ $.get("http://182.92.176.105/getinfo/?query=true&app=myresume", function(data){
 		city = iplists['iplog'][i].city;
 		lng = iplists['iplog'][i].lng;
 		lat = iplists['iplog'][i].lat;
-
+		no = iplists['iplog'][i].no;
+		
 		var strobject = '{"'+city+'":['+lng+','+lat+']}';
 		var geoCoord= eval("("+strobject+")");
     	myChart._option['series'][0]['geoCoord']=geoCoord;
     	myChart.freshgeocoord();
-		var con=[{name:city}, {name:'北京', value:75}];
-		var point={name:city ,value:30};
+		var con=[{name:city}, {name:'北京'}];
+		var point={name:city ,value:no};
 		myChart.addMarkLine(0,{
 			data:[con],
 		});
