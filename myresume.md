@@ -25,7 +25,7 @@ body{	width:825px;font-size:16px;  }
 	</tr>
 	<tr>
 		<td>邮箱</td>
-		<td><a href="mailto:xkjcf.jia@gmail.com" title="mail to me">xkjcf.jia@gmail.com</a></td>
+		<td><a href="mailto:tying@bit.edu.cn" title="mail to me">tying@bit.edu.cn</a></td>
 		<td>联系方式</td>
 		<td>15210622794</td>
 	<tr>
