@@ -25,7 +25,7 @@ body{	width:825px;font-size:16px;  }
 	</tr>
 	<tr>
 		<td>邮箱</td>
-		<td><a href="mailto:tying@bit.edu.cn" title="mail to me">tying@bit.edu.cn</a></td>
+		<td><a href="mailto:xkjcf_jia@126.com" title="mail to me">xkjcf_jia@126.com</a></td>
 		<td>联系方式</td>
 		<td>15210622794</td>
 	<tr>
@@ -55,23 +55,12 @@ body{	width:825px;font-size:16px;  }
 </table>
 ## 综合技能
 【<strong>熟练的语言</strong>】：脚本语言包括Python，PHP，Linux Shell，编译语言包括C/C++，Java等。  
-【<strong>专向能力</strong>】：
-<table style="width:100%;margin-top:5px;margin-bottom:5px">
-	<tr>
-		<td>Web开发能力</td>
-		<td>语言包括HTML5，CSS3，Javascript（jQuery），后台框架包括Flask（Python），Laravel（PHP），页面渲染框架Bootstrap。</td>
-	</tr>
-	<tr>
-		<td>弹性云计算系统部署能力</td>
-		<td>熟练使用CloudStack部署网络环境，使用Libvirt API管理KVM虚拟机，使用VNC远程接入方法。</td>
-	</tr>
-	<tr>
-		<td>安全网络环境配置能力</td>
-		<td>使用Csico交换机配置网络结构，通过Vlan，ACL设置访问控制，配置系统iptables保护系统安全。</td>
-	</tr>
-</table>
-【<strong>熟练的系统</strong>】：Ubuntu和CentOS。  
-【<strong>熟悉的协议</strong>】：DNS，HTTP，SMTP，FTP。  
+【<strong>专向能力</strong>】：  
+**Web应用开发**：使用的语言包括HTML5，CSS3，Javascript(jQuery)，后台框架包括Flask(Python)，Laravel(PHP)，页面渲染框架Bootstrap。  
+**云计算系统部署**：熟练使用CloudStack部署网络环境，使用Libvirt API管理KVM虚拟机，使用VNC远程接入方法。  
+**网络环境配置**：使用Csico交换机配置网络结构，通过Vlan，ACL设置访问控制，配置系统iptables保护系统安全。  
+
+【<strong>熟练的技能</strong>】：熟练应用Linux操作系统的程序安装、内核编译、驱动开发、网络配置、防火墙配置等。熟练掌握Linux嵌入式开发、交叉编译、外围硬件配置等。  
 【<strong>英语水平</strong>】：CET-4，能够熟练查找、阅读英文技术文档。
 
 ## 主要项目经历
