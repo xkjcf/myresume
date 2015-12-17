@@ -49,18 +49,18 @@ body{	width:825px;font-size:16px;  }
 	<tr>
 		<td style="border:0px">2009.09-2013.07</td>
 		<td style="border:0px">学士</td>
-		<td style="border:0px">信息安全与对抗专业</td>
+		<td style="border:0px">信息对抗技术专业</td>
 		<td style="border:0px">北京理工大学</td>
 	</tr>
 </table>
 ## 综合技能
-【<strong>熟练的语言</strong>】：脚本语言包括Python，PHP，Linux Shell，编译语言包括C/C++，Java等。  
+【<strong>熟练的语言</strong>】：脚本语言包括Python，PHP，Linux Shell等，编译语言包括C/C++，Java，go等。  
 【<strong>专向能力</strong>】：  
 **Web应用开发**：使用的语言包括HTML5，CSS3，Javascript(jQuery)，后台框架包括Flask(Python)，Laravel(PHP)，页面渲染框架Bootstrap。  
-**云计算系统部署**：熟练使用CloudStack部署网络环境，使用Libvirt API管理KVM虚拟机，使用VNC远程接入方法。  
+**网络渗透**：熟练掌握网络渗透工具nmap，metasploit，sqlmap，WVS等，熟练掌握网络渗透专用系统Kali的使用方法。  
+**云计算系统部署**：熟练配置和使用云计算平台，掌握通过cloudstack管理云平台的方法。熟练使用Docker虚拟化技术完成日常任务。  
 **网络环境配置**：使用Csico交换机配置网络结构，通过Vlan，ACL设置访问控制，配置系统iptables保护系统安全。  
-
-【<strong>熟练的技能</strong>】：熟练应用Linux操作系统的程序安装、内核编译、驱动开发、网络配置、防火墙配置等。熟练掌握Linux嵌入式开发、交叉编译、外围硬件配置等。  
+【<strong>熟练的技能</strong>】：熟练应用Linux操作系统的程序安装、驱动开发、网络配置、防火墙配置等。熟练掌握Linux嵌入式开发、交叉编译、外围硬件配置等。  
 【<strong>英语水平</strong>】：CET-4，能够熟练查找、阅读英文技术文档。
 
 ## 主要项目经历
@@ -89,21 +89,21 @@ body{	width:825px;font-size:16px;  }
 <div style="width:100%;margin:25px 0;">
 	<div style="width:100%;height:30px;">
 		<div style="float:left;font-weight:bold;">
-		基于弹性云计算的信息安全对抗演练平台
+		基于IPV6网络的域名动态解析服务平台
 		</div>
 		<div style="float:right;font-weight:bold;">
 		2014.09-2015.05
 		</div>
 	</div>
 	<div>
-		<div>【<strong>项目描述</strong>】根据长期筹办网络安全竞赛的经验，开发的一个致力于培训和比赛为一体的对抗演练平台。</div>
-		<div>【<strong>开发环境</strong>】以CloudStack为云管理平台控制KVM虚拟机管理器；开发windows和linux虚拟及中的监控程序。</div>
-		<div>【<strong>本人工作</strong>】本人在该项目中负责整体结构设计和项目具体实施。
+		<div>【<strong>项目描述</strong>】随着IPv4地址资源的耗尽，广大网民特别是学生群体使用IPv6地址的频率不断提高。本服务平台为这些用户提供了成本低廉、配置灵活的IPv6域名动态解析服务。</div>
+		<div>【<strong>开发环境</strong>】本平台基于Ubuntu系统开发，以bind软件作为域名服务器软件，实现动态域名解析服务。</div>
+		<div>【<strong>本人工作</strong>】本人在该项目中负责整体结构设计和设计项目具体实施方案。
 			<ol style="margin:0px;">
 				<li>作为负责人主要进行了系统设计，模块划分，模块之间接口定义。</li>
-				<li>主要负责通过cloudstack设计和部署私有网络环境，为适应平台要求，对cloudstack的源码进行了二次开发。</li>
-				<li>负责虚拟机模版内部监控驱动开发。</li>
-				<li>负责平台内部网络配置和访问控制。</li>
+				<li>主要负责bind软件域名解析服务的环境搭建与配置。</li>
+				<li>主要负责服务平台域名解析服务网站功能设计与开发。</li>
+				<li>主要负责服务平台动态域名解析API接口设计与实现。</li>
 			</ol>
 		</div>
 	</div>
@@ -270,6 +270,5 @@ body{	width:825px;font-size:16px;  }
 
 <div style="text-align:center;margin-top:100px;">
 <h3>十分感谢您在百忙中阅读我的简历！</h3>
-&copy; xkjcf ~ <a href="http://xkjcf.github.io/myresume" title="ICU">Find Me Here</a>
 </div>
 
