@@ -59,7 +59,7 @@ body{	width:825px;font-size:16px;  }
 **Web应用开发**：使用的语言包括HTML5，CSS3，Javascript(jQuery)，后台框架包括Flask(Python)，Laravel(PHP)，页面渲染框架Bootstrap。  
 **网络渗透**：熟练掌握网络渗透工具nmap，metasploit，sqlmap，WVS等，熟练掌握网络渗透专用系统Kali的使用方法。  
 **云计算系统部署**：熟练配置和使用云计算平台，掌握通过cloudstack管理云平台的方法。熟练使用Docker虚拟化技术完成日常任务。  
-**网络环境配置**：使用Csico交换机配置网络结构，通过Vlan，ACL设置访问控制，配置系统iptables保护系统安全。  
+**网络环境配置**：使用Cisco交换机配置网络结构，通过Vlan，ACL设置访问控制，配置系统iptables保护系统安全。  
 【<strong>熟练的技能</strong>】：熟练应用Linux操作系统的程序安装、驱动开发、网络配置、防火墙配置等。熟练掌握Linux嵌入式开发、交叉编译、外围硬件配置等。  
 【<strong>英语水平</strong>】：CET-4，能够熟练查找、阅读英文技术文档。
 
@@ -236,6 +236,14 @@ body{	width:825px;font-size:16px;  }
 	</div>
 	<div style="width:100%;height:30px;">
 		<div style="float:left;">
+		【<strong>学校</strong>】2010-2011 学年第二学期北京理工大学本科生优秀学生三等奖学金
+		</div>
+		<div style="float:right;">
+		2011.09
+		</div>
+	</div>
+	<div style="width:100%;height:30px;">
+		<div style="float:left;">
 		【<strong>学校</strong>】2010-2011 学年第一学期北京理工大学本科生优秀学生三等奖学金
 		</div>
 		<div style="float:right;">
@@ -263,7 +271,7 @@ body{	width:825px;font-size:16px;  }
 ## 个人评价
 【<strong>个人特点</strong>】吃苦耐劳坚忍不拔不轻易放弃，思维活跃勇于创新敢想敢做，拥有快速学习与系统思维能力。  
 【<strong>工作能力</strong>】具有深入系统的大局观，遇事沉着冷静，善于统观全局，着眼点高，以发展的眼光看待问题。领导力、组织协调能力、活动策划能力和公关能力突出，团队协作能力优秀。  
-【<strong>生活态度</strong>】乐观开朗，严于律己，宽以待人，热情诚恳，责任心强
+【<strong>生活态度</strong>】乐观开朗，严于律己，宽以待人，热情诚恳，责任心强。
 
 
 
